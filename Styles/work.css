@@ -1,0 +1,395 @@
+@charset "utf-8";
+@import url("../webfonts/gillsans/stylesheet.css");
+
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+#inf{
+	margin-top: 0px;
+	margin-bottom: -11px;
+	
+	}
+#help{
+	padding-top: 0px;
+	margin-top: 4px;
+	
+	}
+	
+#Next{
+	display: block;
+	width: 124px;
+	height: 64px;
+	background-image: url(../Media/Next.png);
+	background-position: 0 0 no-repeat;
+	background-repeat: no-repeat;
+	background-color:transparent;
+}
+/* on décale l'image de fond de la hauteur du lien, soit 31 px */
+#Next:hover,#Next:focus{
+	background-position: 0 0 no-repeat;
+	background-image: url(../Media/Nexthover_.png);
+	background-repeat: no-repeat;
+	background-color:transparent;
+}
+#Next:active{
+	background-position: 0 0 no-repeat;
+	background-image: url(../Media/NextClick.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	}
+
+#accueil{
+	margin-top: 86px;
+	
+	}
+
+
+	#merci{
+		text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.79);
+		color:#FFFFFF;
+		}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+#eval{
+	margin-top: 112px;
+	
+	}
+	
+#env{
+	font-family: "Times New Roman";
+	font-style: italic;
+	font-weight: bold;
+	font-size: 16px;
+	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+	}
+#help a:active, #help a:hover{
+	color:#06F;
+	font-style: normal;
+	font-weight: 500;
+	text-decoration: none;
+	}
+#help a{
+	font-style: normal;
+	font-weight: 500;
+	color:#668AB8;
+	text-decoration: none;
+	}
+	
+#workspace .sep {
+    height: 2px;
+    background: #e8e8e8;
+    width:100%;
+
+}
+body {
+    /*background-image: url(http://kreativo.se/backlogin.jpg);*/
+ 	background-color:#A09F9F;
+    font-family: Abel;
+    padding-top: 20px;
+	font-weight: bold;
+}
+
+/* BUTTONS */.buttons a, .buttons button{
+	display: inline;
+	margin-top: 0;
+	margin-right: 0px;
+	margin-bottom: 0;
+	background-color: #f5f5f5;
+	border: 1px solid #dedede;
+	border-top: 1px solid #eee;
+	border-left: 1px solid #eee;
+	font-family: abel;
+	font-size: 100%;
+	line-height: 130%;
+	text-decoration: none;
+	font-weight: bold;
+	color: #565656;
+	cursor: pointer;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-left: 5px;
+	padding-bottom: 6px; /* Links */
+}
+.buttons button{
+	width: auto;
+	overflow: visible;
+	padding: 4px 10px 3px 7px;
+}
+.buttons button[type]{
+    padding:5px 10px 5px 7px; /* Firefox */
+    line-height:17px; /* Safari */
+}
+*:first-child+html button[type]{
+    padding:4px 10px 3px 7px; /* IE7 */
+}
+.buttons button img, .buttons a img{
+	border: none;
+	width: 16px;
+	height: 16px;
+}
+
+/* STANDARD */button:hover, .buttons a:hover{
+    background-color:#161414;
+    border:1px solid #838587;
+    color:#ffffff;
+}
+.buttons a:active{
+    background-color:#3b3d3e;
+    border:1px solid #3b3d3e;
+    color:#fff;
+}/* POSITIVE */button.positive, .buttons a.positive{
+    color:#529214;
+}
+.buttons a.positive:hover, button.positive:hover{
+    background-color:#E6EFC2;
+    border:1px solid #C6D880;
+    color:#529214;
+}
+.buttons a.positive:active{
+    background-color:#529214;
+    border:1px solid #529214;
+    color:#fff;
+}/* NEGATIVE */.buttons a.negative, button.negative{
+    color:#d12f19;
+}
+.buttons a.negative:hover, button.negative:hover{
+    background:#fbe3e4;
+    border:1px solid #fbc2c4;
+    color:#d12f19;
+}
+.buttons a.negative:active{
+    background-color:#d12f19;
+    border:1px solid #d12f19;
+    color:#fff;
+}/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+/* Mobile Layout: 480px and below. */
+  	#suiv{
+	left: 43.5%;
+	position: absolute;
+	top: 470px;
+}
+
+#wami{
+	padding-top: 24px;
+	}
+	
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 86.45%;
+	padding-left: 2.275%;
+	padding-right: 2.275%;
+	clear: none;
+	float: none;
+}
+#recorder {
+	margin-top: 0px;
+}
+#prompt{
+	font-size: 30px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #727272;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+	}
+#workspace{
+	width: 100%;
+	height: 400px;
+	margin: auto;
+	position: relative;
+	text-align: center;
+	font-family: gillsans;
+	background-color: #FCF8F8;
+	background: #fff;
+	box-shadow: 0px 0px 0px 5px rgba( 255,255,255,0.4 ), 
+        0px 4px 20px rgba( 0,0,0,0.33 );
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.footer {
+	margin-top: 26px;
+}
+.header {
+}
+.main {
+display: block;
+}
+.titre {
+	font-family: abel;
+	font-style: normal;
+	font-weight: 400;
+	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.79);
+	color: #F9F9F9;
+	font-size: 45px;
+}
+.zeroMargin_mobile {
+margin-left: 0;
+}
+.hide_mobile {
+display: none;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#wami {
+
+
+
+}
+	#suiv{
+	left: 66%;
+	position: absolute;
+	top: 397px;
+}
+#workspace{
+	width: 100%;
+	height: 341px;
+	margin: auto;
+	position: relative;
+	text-align: center;
+	font-family: gillsans;
+	background: #fff;
+	box-shadow: 0px 0px 0px 5px rgba( 255,255,255,0.4 ), 
+        0px 4px 20px rgba( 0,0,0,0.33 );
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+#recorder {
+
+
+
+}
+.footer {
+	margin-top: 26px;
+}
+.header {
+}
+.main {
+display: block;
+}
+.titre {
+	font-family: abel;
+	font-style: normal;
+	font-weight: bold;
+	color: #F8F8F8;
+	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.79);
+color: #F9F9F9;
+font-size: 45px;
+}
+.hide_tablet {
+display: none;
+}
+.zeroMargin_tablet {
+margin-left: 0;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+
+.gridContainer {
+	width: 88.5%;
+	max-width: 1232px;
+	padding-left: 0.75%;
+	padding-right: 0.75%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#workspace{
+	width: 100%;
+	height: 341px;
+	margin: auto;
+	position: relative;
+	text-align: center;
+	font-family: gillsans;
+	background: #fff;
+	box-shadow: 0px 0px 0px 5px rgba( 255,255,255,0.4 ), 
+        0px 4px 20px rgba( 0,0,0,0.33 );
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+#recorder {
+	margin-top: 0px;
+
+
+
+}
+.footer {
+	margin-top: 26px;
+}
+.header {
+}
+.main {
+}
+.titre {
+	font-family: abel;
+	font-style: normal;
+	font-weight: bold;
+	color: #F8F8F8;
+	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.79);
+color: #F9F9F9;
+font-size: 45px;
+}
+.zeroMargin_desktop {
+margin-left: 0;
+}
+	#suiv{
+	left: 64%;
+	position: absolute;
+	top: 397px;
+}
+.hide_desktop {
+display: none;
+}
+}

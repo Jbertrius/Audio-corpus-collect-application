@@ -1,0 +1,351 @@
+@charset "utf-8";
+
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+
+#desc{
+	background-color: #FCF8F8;
+	background: #fff;
+	width: 50%;
+	height: 80%;
+	box-shadow: 0px 0px 0px 5px rgba( 255,255,255,0.4 ), 
+        0px 4px 20px rgba( 0,0,0,0.33 );
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding-bottom: 9px;
+	}
+
+#header{
+	font-family: abel;
+	font-style: normal;
+	font-weight: bold;
+	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.79);
+	color: #F9F9F9;
+	font-size: 45px;
+	}
+	
+.inputs select{
+
+	}
+	
+.inputs input[type="number"] {
+  padding: 10px;
+  border: solid 1px #dcdcdc;
+  background-color:#F7F4F4;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+.inputs input[type="number"]:focus,
+.inputs input[type="number"].focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
+	
+input[type=button], input[type=submit], input[type=reset], button, .button {
+padding: 5px 15px;
+margin: 3px 4px;
+display: inline-block;
+color: #110f0f;
+font-family:abel;
+font-size: 15px;
+font-weight:bold;
+cursor: pointer;
+background: #a09f9f;
+background: linear-gradient(top, #a09f9f 0%, #878686 100%);
+background: -moz-linear-gradient(top, #a09f9f 0%, #878686 100%);
+background: -webkit-linear-gradient(top, #a09f9f 0%, #878686 100%);
+background: -o-linear-gradient(top, #a09f9f 0%, #878686 100%);
+border: 1px solid #a09f9f;
+border-radius: 6px;
+-moz-border-radius: 6px;
+-webkit-border-radius: 6px;
+-o-border-radius: 6px;
+box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+-moz-box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+-webkit-box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+-o-box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.50);
+}
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover, button:hover, .button:hover {
+background: linear-gradient(top, #bab9b9 0%, #a09f9f 100%);
+background: -moz-linear-gradient(top, #bab9b9 0%, #a09f9f 100%);
+background: -webkit-linear-gradient(top, #bab9b9 0%, #a09f9f 100%);
+color:#F8F0F1;
+text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+background: -o-linear-gradient(top, #bab9b9 0%, #a09f9f 100%);
+}
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active, button:active, .button:active{
+opacity:0.8;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+	/*background-image: url(http://kreativo.se/backlogin.jpg);*/
+	background-color: #A09F9F;
+	font-family: Abel,"Helvetica Neue", Helvetica, Arial;
+	padding-top: 10px;
+	font-weight: bold;
+}
+
+.container {
+	width: auto;
+ 
+}
+
+#signup {
+	background: #fff;
+	box-shadow: 0px 0px 0px 5px rgba( 255,255,255,0.4 ), 
+        0px 4px 20px rgba( 0,0,0,0.33 );
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	position: relative;
+	padding-top: 9px;
+	float: none;
+	padding-bottom: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+#signup header {
+    margin-bottom: 20px;
+}
+
+#signup header h1 {
+    color: #333333;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#signup header p {
+    color: #8f8f8f;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#signup .sep {
+    height: 1px;
+    background: #e8e8e8;
+    width: auto;
+    margin: 0px -25px;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 86.45%;
+	padding-left: auto;
+	padding-right: auto;
+	clear: none;
+	float: none;
+}
+
+
+	
+#form{
+position:relative;
+}
+	
+#env, #age, #sexe, #region, #boutonSubmit, #prof{
+	font-family: abel;
+	font-style: normal;
+	font-weight: bold;
+}
+.header {
+}
+.footer {
+}
+.content {
+	font-family: abel;
+	font-style: normal;
+    font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+}
+#text{
+	font-family: abel;
+	font-style: normal;
+    font-weight: bold;
+	width: 187px;
+}
+.zeroMargin_mobile {
+margin-left: 0;
+}
+table{
+	padding-top: 0px;
+	}
+.hide_mobile {
+display: none;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 41px;
+}
+#env, #age, #sexe, #region, #prof, #boutonSubmit {
+	font-family: abel;
+	font-style: normal;
+   font-weight: bold;
+}
+table{
+	padding-top: 0px;
+	margin-top: -17px;
+	}
+.header {
+}
+
+#signup {
+
+    padding: 0px 25px 25px;
+    background: #fff;
+    box-shadow: 
+        0px 0px 0px 5px rgba( 255,255,255,0.4 ), 
+        0px 4px 20px rgba( 0,0,0,0.33 );
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    display: table;
+    position: static;
+}
+.footer {
+}
+.content {
+	font-family: abel;
+	font-style: normal;
+   font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+}
+.hide_tablet {
+display: none;
+}
+.zeroMargin_tablet {
+margin-left: 0;
+}
+
+#text{
+	font-family: abel;
+	font-style: normal;
+   font-weight: bold;
+	width: 187px;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+
+.gridContainer {
+	width: 88.5%;
+	max-width: 1232px;
+	padding-left: 0.75%;
+	padding-right: 0.75%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+	padding-bottom: 41px;
+}
+#env, #age, #sexe, #region, #prof, #boutonSubmit{
+	font-family: abel;
+	font-style: normal;
+   font-weight: bold;
+}
+#signup {
+	padding-top: 0px;
+	padding-right: 25px;
+	padding-left: 25px;
+	padding-bottom: 25px;
+	background: #fff;
+	box-shadow: 0px 0px 0px 5px rgba( 255,255,255,0.4 ), 
+        0px 4px 20px rgba( 0,0,0,0.33 );
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	display: table;
+	position: static;
+}
+
+table{
+	padding-top: 0px;
+	}
+
+#text{
+	font-family: Myfont;
+	font-style: normal;
+   font-weight: bold;
+	width: 187px;
+}
+
+.header {
+}
+.footer {
+}
+.content {
+	margin-left: auto;
+	margin-right: auto;
+}
+.zeroMargin_desktop {
+margin-left: 0;
+}
+.hide_desktop {
+display: none;
+}
+}

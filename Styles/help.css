@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    /*background-image: url(http://kreativo.se/backlogin.jpg);*/
+ 	background-color:#A09F9F;
+    font-family: Abel;
+}
+
+#main{
+	background-color: #FCF8F8;
+	background: #fff;
+	font-family: Abel;
+	box-shadow: 0px 0px 0px 5px rgba( 255,255,255,0.4 ), 
+        0px 4px 20px rgba( 0,0,0,0.33 );
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	}
+

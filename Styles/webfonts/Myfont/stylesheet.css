@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Myfont';
+	src: url('gillsans.eot');
+	src: url('gillsans.eot?#iefix') format('embedded-opentype'),
+		url('gillsans.woff') format('woff'),
+		url('gillsans.ttf') format('truetype'),
+		url('gillsans.svg') format('svg');
+}
